@@ -1,0 +1,8 @@
+%h1 Cadastro de aluno
+
+%form{method: 'POST', action: '/alunos', enctype: "multipart/form-data"}
+  %input{ type: 'file', accept: 'text/xml', name: 'file'}
+  %br
+  %small Importe um xml para cadastrar um aluno
+  %br
+  %button{type: 'submit'} Cadastrar

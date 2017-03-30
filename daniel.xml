@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+  <student>
+    <name>Madara Santos</name>
+    <course>Sistemas de informação</course>
+    <matricula>14101062</matricula>
+    <phone>86994938293</phone>
+  </student>
+
+  <student>
+    <name>Obito Silva</name>
+    <course>Sistemas de informação</course>
+    <matricula>14101063</matricula>
+    <phone>86994938293</phone>
+  </student>
+
+  <student>
+    <name>Sasuke Campos</name>
+    <course>Sistemas de informação</course>
+    <matricula>14101064</matricula>
+    <phone>86994938293</phone>
+  </student>
+</students>

@@ -1,0 +1,25 @@
+.ui.segment
+  %h1 Linguagem Para Organização e Transferência de Dados Para WEB
+  %h4 Simples aplicação para ler e salvar dados no banco através de um arquivos XML.
+
+%table.ui.table
+  %thead
+    %tr
+      %th Nome 
+      %th Matricula 
+      %th Telefone 
+      %th Curso 
+      %th Ações
+  %tbody
+    - @students.each do |student|
+      - link = "aluno/#{student.id}.xml"
+      %tr
+        %td= student.name
+        %td= student.matricula
+        %td= student.phone
+        %td= student.course
+        %td
+          %input{type: 'hidden', value: student.id, name: 'id'}
+          %a.ui.button.mini.teal{'href': link }
+            %i.doc.icon{"aria-hidden" => "true"}
+            Gerar XML

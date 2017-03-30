@@ -1,0 +1,26 @@
+!!! 5
+
+%html{ 'ng-app': 'xml'}
+  %head
+    %title Cadastro de Alunos
+    %meta{ 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' }
+    %link{ 'rel': 'stylesheet', 'type': 'text/css' ,'href': '/semantic/dist/semantic.min.css' }
+  %body{ 'ng-controller': 'StudentsController as student'}
+    %header
+      .ui.menu.secondary.huge
+        .ui.container
+          %a.item{:href => "/"} XML
+          .menu.right
+            %a.item{:href => "/alunos/cadastro"} Cadastrar Aluno
+            %a.item{:href => "/alunos.xml"} Gerar XML
+    #content.ui.container
+      = flash[:message]
+      = yield
+    #footer.ui.container
+      %p
+        &copy Daniel Santos 2017
+    %script{type: 'text/javascript', src: "/jquery/dist/jquery.min.js"}
+    %script{type: 'text/javascript', src: "/angular/angular.min.js"}
+    %script{type: 'text/javascript', src: "/custom/js/app.js"}
+    :javascript
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

@@ -1,0 +1,21 @@
+{
+  "name": "trabalho_xml",
+  "description": "save and read data from xml",
+  "main": "app.rb",
+  "authors": [
+    "Daniel Santos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.9"
+  }
+}
